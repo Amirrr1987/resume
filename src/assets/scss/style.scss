@@ -23,3 +23,30 @@ html{
   color: $body-text-color;
   background-color: $body-bg-color;
 }
+
+
+.basic {
+    &__container {}
+
+    &__table {}
+}
+
+.table {
+    &__tbody {}
+
+    &__thead {}
+}
+
+.tbody {
+    &__col {}
+
+    &__row {}
+}
+
+.thead {
+    &__col {}
+
+    &__row {}
+
+    &--title {}
+}
