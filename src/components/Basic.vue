@@ -7,7 +7,7 @@
             <th class="thead__col thead--title" colspan="4">اطلاعات پایه :</th>
           </tr>
           <tr class="thead__row">
-            <th class="thead__col" v-for="(item,index) in items" :key="index">{{item.title}}</th>
+            <!-- <th class="thead__col" v-for="(item,index) in items" :key="index">{{item.title}}</th> -->
           </tr>
         </thead>
         <tbody class="table__tbody tbody">
@@ -25,27 +25,21 @@ export default {
   name: "Basic",
   data() {
     return {
-      items: [
-        { 
-          title: "نام" ,
-          body : "امیر",
-        },
-        { 
-          title: "تاریخ تولد",
-          body:  "1366" ,
-        },
-        { 
-          title: "وضیعت تاهل",
-          body:  "متاهل" ,
-        },
-        
-        { 
-          title: "وضعیت سربازی",
-          body:  "اتمام خدمت" ,
-        },
-      ],
-    };
+      items: null,
+    }
   },
+  mounted () {
+    axios
+      // .get('https://api.coindesk.com/v1/bpi/currentprice.json')
+      .get('@/assets/json/basic.json')
+      
+      .then(response => (this.items = response.data))
+      // console.log(this.info);
+    
+  }
+  
+
+
 };
 </script>
 
