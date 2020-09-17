@@ -29,7 +29,7 @@ html{
 
 .basic {
     &__container {
-        
+        @extend .container;
     }
 
     &__table {}
