@@ -1,3 +1,9 @@
+@font-face {
+    font-family: 'primary';
+    src: url('../font/iransans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
 :root{
     --body-text-color    : #004d40;
     --body-bg-color      : #FEFEFE;
@@ -5,6 +11,7 @@
     --container-size     : 1200px;
     --table-tbody-height : 40px;
     --table-title-height : 60px;
+    --body-font-family   : primary;
 }
 
 $body-text-color   : var(--body-text-color);
@@ -13,7 +20,8 @@ $container-size    : var(--container-size);
 $table-bg-color    : var(--table-bg-color);
 $table-border-color: var(--table-bg-color);
 $table-tbody-col-height : var(--table-tbody-height);
-$table-title-height : var(--table-title-height);
+$table-title-height     : var(--table-title-height);
+$body-font-family       : var(--body-font-family);
 .container{
     width: $container-size;
     margin-left: auto;
@@ -29,6 +37,7 @@ html{
 #app{
   color: $body-text-color;
   background-color: $body-bg-color;
+  font-family: $body-font-family;
 }
 .home{
     display: grid;
