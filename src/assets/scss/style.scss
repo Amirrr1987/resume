@@ -1,7 +1,25 @@
+:root{
+    --body-text-color: #212121;
+    --body-bg-color  : #FEFEFE;
+    --container-size : 1200px;
+}
+
+$body-text-color: var(--body-text-color);
+$body-bg-color  : var(--body-bg-color);
+$container-size : var(--container-size);
+
+
+.container{
+    width: $container-size;
+}
 *{
     margin: 0;
     padding: 0;
 }
 html{
     direction: rtl;
+}
+#app{
+  color: $body-text-color;
+  background-color: $body-bg-color;
 }
