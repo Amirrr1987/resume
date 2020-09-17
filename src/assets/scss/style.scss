@@ -80,6 +80,13 @@ html{
 
     &__table {}
 }
+.project{
+    &__container {
+        @extend .container;
+    }
+
+    &__table {}
+}
 .status {
     &__container {
         @extend .container;
