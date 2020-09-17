@@ -14,11 +14,11 @@
     --body-font-family   : primary;
 }
 
-$body-text-color   : var(--body-text-color);
-$body-bg-color     : var(--body-bg-color);
-$container-size    : var(--container-size);
-$table-bg-color    : var(--table-bg-color);
-$table-border-color: var(--table-bg-color);
+$body-text-color        : var(--body-text-color);
+$body-bg-color          : var(--body-bg-color);
+$container-size         : var(--container-size);
+$table-bg-color         : var(--table-bg-color);
+$table-border-color     : var(--table-bg-color);
 $table-tbody-col-height : var(--table-tbody-height);
 $table-title-height     : var(--table-title-height);
 $body-font-family       : var(--body-font-family);
@@ -35,9 +35,9 @@ html{
     direction: rtl;
 }
 #app{
-  color: $body-text-color;
-  background-color: $body-bg-color;
-  font-family: $body-font-family;
+  color            : $body-text-color;
+  background-color : $body-bg-color;
+  font-family      : $body-font-family;
 }
 .home{
     display: grid;
