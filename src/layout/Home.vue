@@ -4,6 +4,7 @@
       <Status/>
       <Education/>
       <Language/>
+      <Skill/>
       <Project/>
       <Course/>
       <Certificate/>
@@ -21,7 +22,8 @@ import Description from '@/components/Description';
 import Certificate from '@/components/Certificate';
 import Course      from '@/components/Course';
 import Project     from '@/components/Project';
-import Language from '@/components/Language';
+import Language    from '@/components/Language';
+import Skill       from '@/components/Skill';
 export default {
     name: 'Home',
     components:{
@@ -30,6 +32,7 @@ export default {
         Status,
         Education,
         Language,
+        Skill,
         Project,
         Certificate,
         Links,
