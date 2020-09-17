@@ -42,6 +42,13 @@ html{
 
     &__table {}
 }
+.description {
+    &__container {
+        @extend .container;
+    }
+
+    &__table {}
+}
 .education {
     &__container {
         @extend .container;
