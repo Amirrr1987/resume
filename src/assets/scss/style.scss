@@ -39,6 +39,13 @@ html{
 
     &__table {}
 }
+.status {
+    &__container {
+        @extend .container;
+    }
+
+    &__table {}
+}
 
 .table {
     width: 100%;
