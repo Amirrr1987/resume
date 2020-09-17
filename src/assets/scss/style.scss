@@ -2,12 +2,14 @@
     --body-text-color: #212121;
     --body-bg-color  : #FEFEFE;
     --container-size : 1200px;
+    --table-bg-color : red;
 }
 
-$body-text-color: var(--body-text-color);
-$body-bg-color  : var(--body-bg-color);
-$container-size : var(--container-size);
-
+$body-text-color   : var(--body-text-color);
+$body-bg-color     : var(--body-bg-color);
+$container-size    : var(--container-size);
+$table-bg-color    : var(--table-bg-color);
+$table-border-color: var(--table-bg-color);
 
 .container{
     width: $container-size;
@@ -37,20 +39,24 @@ html{
 
 .table {
     width: 100%;
-    background-color: green;
+    border-collapse: collapse;
     &__tbody {}
 
     &__thead {}
 }
 
 .tbody {
-    &__col {}
+    &__col {
+        border: 1px solid $table-border-color;
+    }
 
     &__row {}
 }
 
 .thead {
-    &__col {}
+    &__col {
+        border: 1px solid $table-border-color;
+    }
 
     &__row {}
 
@@ -58,7 +64,7 @@ html{
         color: #FFF;
         text-shadow: 0 0 #111;
         text-align: right;
-        background-color: rebeccapurple;
+        background-color: $table-bg-color;
         padding: 1em;
     }
 }
