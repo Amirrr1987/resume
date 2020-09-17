@@ -3,14 +3,16 @@
       <Basic/>
       <Status/>
       <Education/>
+      <Links/>
       <Description/>
   </main>
 </template>
 
 <script>
-import Basic from '@/components/Basic';
-import Status from '@/components/Status';
-import Education from '@/components/Education';
+import Basic       from '@/components/Basic';
+import Status      from '@/components/Status';
+import Education   from '@/components/Education';
+import Links       from '@/components/Links';
 import Description from '@/components/Description';
 export default {
     name: 'Home',
@@ -18,6 +20,7 @@ export default {
         Basic,
         Status,
         Education,
+        Links,
         Description,
     }
 }

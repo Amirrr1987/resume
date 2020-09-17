@@ -6,9 +6,14 @@
           <tr class="thead__row">
             <th class="thead__col thead--title" colspan="4">{{title}} :</th>
           </tr>
+        </thead>
         <tbody class="table__tbody tbody">
-          <tr class="tbody__row" v-for="(item,index) in items" :key="index">
-            <td class="tbody__col">{{item.img}}{{item.url}}{{item.title}}</td>
+          <tr class="tbody__row">
+            <td class="tbody__col" v-for="(item,index) in items" :key="index">
+                {{item.img}}
+                {{item.url}}
+                {{item.title}}
+            </td>
           </tr>
         </tbody>
       </table>
@@ -21,13 +26,14 @@ export default {
   name: "Links",
   data() {
     return {
-      title: "پیوند ها",
+      title: "پیوندها",
       items: [
         { 
           title: "نام" ,
-          img  : "https://picsum.photos/200/118",
-          Url  : "امیر",
+          img  : "امیر",
+          url  : "امیر",
         },
+
       ],
     };
   },
