@@ -3,6 +3,7 @@
       <Basic/>
       <Status/>
       <Education/>
+      <Course/>
       <Certificate/>
       <Links/>
       <Description/>
@@ -16,10 +17,12 @@ import Education   from '@/components/Education';
 import Links       from '@/components/Links';
 import Description from '@/components/Description';
 import Certificate from '@/components/Certificate';
+import Course      from '@/components/Course';
 export default {
     name: 'Home',
     components:{
         Basic,
+        Course,
         Status,
         Education,
         Links,

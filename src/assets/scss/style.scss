@@ -50,6 +50,14 @@ html{
 
     &__table {}
 }
+
+.course {
+    &__container {
+        @extend .container;
+    }
+
+    &__table {}
+}
 .description {
     &__container {
         @extend .container;
