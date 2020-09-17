@@ -25,7 +25,7 @@ export default {
   name: "Project",
   data() {
     return {
-      title: "اطلاعات تحصیلی",
+      title: "پروژه ها",
       items: [
         { 
           title: "نام" ,
