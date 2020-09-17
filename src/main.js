@@ -4,6 +4,11 @@ import './registerServiceWorker'
 import router from './router'
 import store from './store'
 import '@/assets/scss/style.scss';
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+
+Vue.use(VueAxios, axios)
+
 Vue.config.productionTip = false
 
 new Vue({
