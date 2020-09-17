@@ -25,7 +25,7 @@ export default {
   name: "Skill",
   data() {
     return {
-      title: "اطلاعات تحصیلی",
+      title: "مهارت ها",
       items: [
         { 
           title: "نام" ,
