@@ -42,6 +42,14 @@ html{
 
     &__table {}
 }
+
+.certificate {
+    &__container {
+        @extend .container;
+    }
+
+    &__table {}
+}
 .description {
     &__container {
         @extend .container;
