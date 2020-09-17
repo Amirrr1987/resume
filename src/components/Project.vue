@@ -1,11 +1,9 @@
 <template>
   <section class="project">
     <div class="project__container">
+     <h3 class="project__title" colspan="4">{{title}} :</h3>
       <table class="project__table table">
         <thead class="table__thead thead">
-          <tr class="thead__row">
-            <th class="thead__col thead--title" colspan="4">{{title}} :</th>
-          </tr>
           <tr class="thead__row">
             <th class="thead__col" v-for="(item,index) in items" :key="index">{{item.title}}</th>
           </tr>

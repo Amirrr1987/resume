@@ -1,10 +1,10 @@
 <template>
   <section class="status">
     <div class="status__container">
+     <h3 class="status__title">{{title}} :</h3>
       <table class="status__table table">
         <thead class="table__thead thead">
           <tr class="thead__row">
-            <th class="thead__col thead--title" colspan="4">{{title}} :</th>
           </tr>
           <tr class="thead__row">
             <th class="thead__col" v-for="(item,index) in items" :key="index">{{item.title}}</th>

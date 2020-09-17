@@ -1,29 +1,28 @@
 <template>
   <section class="skill">
     <div class="skill__container">
+      <h3 class="skill__title">{{title}} :</h3>
       <table class="skill__table table">
         <thead class="table__thead thead">
           <tr class="thead__row">
-            <th class="thead__col thead--title" colspan="4">{{title}} :</th>
-          </tr>
-          <tr class="thead__row">
-            <th class="thead__col" v-for="(item,index) in items" :key="index">{{item.title}}</th>
           </tr>
         </thead>
-        <tbody class="table__tbody tbody">
-          <tr class="tbody__row">
-            <td class="tbody__col" v-for="(item,index) in items" :key="index">{{item.body}}</td>
-          </tr>
-        </tbody>
       </table>
+      <OS class="skill__table"/>
+      <OS class="skill__table"/>
+      <OS class="skill__table"/>
     </div>
+    
   </section>
 </template>
 
 <script>
-
+import OS from '@/components/OS';
 export default {
   name: "Skill",
+  components:{
+    OS,
+  },
   data() {
     return {
       title: "مهارت ها",

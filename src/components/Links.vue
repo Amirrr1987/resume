@@ -1,10 +1,10 @@
 <template>
   <section class="links">
     <div class="links__container">
+     <h3 class="link__title">{{title}} :</h3>
       <table class="links__table table">
         <thead class="table__thead thead">
           <tr class="thead__row">
-            <th class="thead__col thead--title" colspan="4">{{title}} :</th>
           </tr>
         </thead>
         <tbody class="table__tbody tbody">

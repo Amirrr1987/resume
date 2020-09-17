@@ -1,12 +1,8 @@
 <template>
   <section class="description">
     <div class="description__container">
+     <h3 class="description__title">{{title}} :</h3>
       <table class="description__table table">
-        <thead class="table__thead thead">
-          <tr class="thead__row">
-            <th class="thead__col thead--title" colspan="4">{{title}} :</th>
-          </tr>
-        </thead>
         <tbody class="table__tbody tbody">
           <tr class="tbody__row">
             <td class="tbody__col">{{description}}</td>
