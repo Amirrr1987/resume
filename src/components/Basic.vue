@@ -4,14 +4,15 @@
       <table class="basic__table table">
         <thead class="table__thead thead">
           <tr class="thead__row">
-            <th class="thead__col thead--title">111</th>
+            <th class="thead__col thead--title" colspan="4">اطلاعات پایه :</th>
+          </tr>
+          <tr class="thead__row">
+            <th class="thead__col" v-for="(item,index) in items" :key="index">{{item.title}}</th>
           </tr>
         </thead>
         <tbody class="table__tbody tbody">
           <tr class="tbody__row">
-            <td class="tbody__col">
-              111
-            </td>
+            <td class="tbody__col" v-for="(item,index) in items" :key="index">{{item.body}}</td>
           </tr>
         </tbody>
       </table>
@@ -21,10 +22,32 @@
 
 <script>
 export default {
-  name: 'Basic'
-}
+  name: "Basic",
+  data() {
+    return {
+      items: [
+        { 
+          title: "نام" ,
+          body : "امیر",
+        },
+        { 
+          title: "تاریخ تولد",
+          body:  "1366" ,
+        },
+        { 
+          title: "وضیعت تاهل",
+          body:  "متاهل" ,
+        },
+        
+        { 
+          title: "وضعیت سربازی",
+          body:  "اتمام خدمت" ,
+        },
+      ],
+    };
+  },
+};
 </script>
 
 <style>
-
 </style>
