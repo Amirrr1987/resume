@@ -72,7 +72,13 @@ html{
 
     &__table {}
 }
+.language{
+    &__container {
+        @extend .container;
+    }
 
+    &__table {}
+}
 .links {
     &__container {
         @extend .container;
