@@ -1,7 +1,7 @@
 <template>
-  <section class="basic">
-    <div class="basic__container">
-      <table class="basic__table table">
+  <section class="status">
+    <div class="status__container">
+      <table class="status__table table">
         <thead class="table__thead thead">
           <tr class="thead__row">
             <th class="thead__col thead--title" colspan="4">اطلاعات پایه :</th>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-  name: "Basic",
+  name: "Status",
   data() {
     return {
       items: [
@@ -37,11 +37,6 @@ export default {
         { 
           title: "وضیعت تاهل",
           body:  "متاهل" ,
-        },
-        
-        { 
-          title: "وضعیت سربازی",
-          body:  "اتمام خدمت" ,
         },
       ],
     };
