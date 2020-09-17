@@ -3,6 +3,7 @@
       <Basic/>
       <Status/>
       <Education/>
+      <Project/>
       <Course/>
       <Certificate/>
       <Links/>
@@ -18,6 +19,7 @@ import Links       from '@/components/Links';
 import Description from '@/components/Description';
 import Certificate from '@/components/Certificate';
 import Course      from '@/components/Course';
+import Project from '@/components/Project';
 export default {
     name: 'Home',
     components:{
@@ -25,9 +27,10 @@ export default {
         Course,
         Status,
         Education,
+        Project,
+        Certificate,
         Links,
         Description,
-        Certificate,
     }
 }
 </script>
