@@ -78,7 +78,7 @@ html{
     }
 
     &__table {
-        
+
     }
 }
 .links {
@@ -102,7 +102,13 @@ html{
 
     &__table {}
 }
+.skill {
+    &__container {
+        @extend .container;
+    }
 
+    &__table {}
+}
 .table {
     width: 100%;
     border-collapse: collapse;
