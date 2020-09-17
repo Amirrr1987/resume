@@ -1,8 +1,8 @@
 :root{
-    --body-text-color: #212121;
-    --body-bg-color  : #FEFEFE;
-    --container-size : 1200px;
-    --table-bg-color : red;
+    --body-text-color    : #004d40;
+    --body-bg-color      : #FEFEFE;
+    --table-bg-color     : #26a69a;
+    --container-size     : 1200px;
     --table-tbody-height : 40px;
     --table-title-height : 60px;
 }
@@ -30,7 +30,10 @@ html{
   color: $body-text-color;
   background-color: $body-bg-color;
 }
-
+.home{
+    display: grid;
+    row-gap: 30px;
+}
 
 .basic {
     &__container {
