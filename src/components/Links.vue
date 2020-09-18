@@ -3,8 +3,8 @@
     <div class="links__container">
      <h3 class="link__title">{{title}} :</h3>
       <table class="links__table table">
-          <tr class="tbody__row">
-            <td class="tbody__col" v-for="(item,index) in items" :key="index">
+          <tr class="table__row">
+            <td class="table__col" v-for="(item,index) in items" :key="index">
                 {{item.img}}
                 {{item.url}}
                 {{item.title}}

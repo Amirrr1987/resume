@@ -3,8 +3,8 @@
     <div class="description__container">
      <h3 class="description__title">{{title}} :</h3>
       <table class="description__table table">
-          <tr class="tbody__row">
-            <td class="tbody__col">{{description}}</td>
+          <tr class="table__row">
+            <td class="table__col">{{description}}</td>
           </tr>
       </table>
     </div>
