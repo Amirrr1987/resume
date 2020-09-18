@@ -2,10 +2,10 @@
   font-family: 'icon';
   src: url('../font/icon.eot?95769629');
   src: url('../font/icon.eot?95769629#iefix') format('embedded-opentype'),
-       url('../font/icon.woff2?95769629')     format('woff2'),
-       url('../font/icon.woff?95769629')      format('woff'),
-       url('../font/icon.ttf?95769629')       format('truetype'),
-       url('../font/icon.svg?95769629#icon')  format('svg');
+    url('../font/icon.woff2?95769629') format('woff2'),
+    url('../font/icon.woff?95769629') format('woff'),
+    url('../font/icon.ttf?95769629') format('truetype'),
+    url('../font/icon.svg?95769629#icon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -51,6 +51,10 @@
 
   &--info-1:before {
     content: '\e8bf';
+  }
+
+  &--wrench-3:before {
+    content: '\eb83';
   }
 
   &--link-5:before {
