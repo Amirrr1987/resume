@@ -1,7 +1,7 @@
 <template>
   <section class="status">
     <div class="status__container">
-     <h3 class="status__title">{{title}} :</h3>
+     <h3 class="status__title"><i class="icon icon--shopping-bag"></i>{{title}} :</h3>
       <table class="status__table table">
           <tr class="table__row">
             <th class="table__col" v-for="(item,index) in items" :key="index">{{item.title}}</th>
