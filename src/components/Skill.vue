@@ -3,10 +3,6 @@
     <div class="skill__container">
       <h3 class="skill__title">{{title}} :</h3>
       <table class="skill__table table">
-        <thead class="table__thead thead">
-          <tr class="thead__row">
-          </tr>
-        </thead>
       </table>
       <OS class="skill__table"/>
       <OS class="skill__table"/>
