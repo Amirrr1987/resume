@@ -4,7 +4,7 @@
       <th class="table__col">{{title}} :</th>
     </tr>
     <tr class="table__row">
-      <th class="table__col" v-for="(item,index) in items" :key="index">{{item.title}}</th>
+      <th class="table__col" colspan="" v-for="(item,index) in items" :key="index">{{item.title}}</th>
     </tr>
     <tr class="table__row">
       <td class="table__col" v-for="(item,index) in items" :key="index">{{item.body}}</td>

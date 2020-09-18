@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'primary';
+    font-family: 'iransans';
     src: url('../font/iransans.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -9,9 +9,8 @@
     --body-bg-color      : #FEFEFE;
     --table-bg-color     : #26a69a;
     --container-size     : 1200px;
-    --table-tbody-height : 40px;
     --table-title-height : 60px;
-    --body-font-family   : primary;
+    --body-font-family   : iransans;
     --dir                : rtl;
 }
 $dir                    : var(--dir);
@@ -23,6 +22,16 @@ $container-size         : var(--container-size);
 $table-bg-color         : var(--table-bg-color);
 $table-border-color     : var(--table-bg-color);
 $table-title-height     : var(--table-title-height);
+
+
+@function text-color($color) {  
+    @if (lightness( $color ) > 40) {
+      @return black;
+    }
+    @else {
+      @return white;
+    }
+}
 
 
 @mixin class($class) {
@@ -37,6 +46,8 @@ $table-title-height     : var(--table-title-height);
             padding-right: 1em;
             height: $table-title-height;
             line-height: $table-title-height;
+            color: text-color(rgb(10, 2, 2));
+            border-radius: 4px 4px 0 0;
         }
     }
 }
@@ -72,6 +83,7 @@ html{
         padding-right: 1em;
         padding-left : 1em;
         text-align: center;
+        
     }
 
     &__row {}

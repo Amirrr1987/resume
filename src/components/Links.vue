@@ -1,7 +1,7 @@
 <template>
   <section class="links">
     <div class="links__container">
-     <h3 class="link__title">{{title}} :</h3>
+     <h3 class="links__title">{{title}} :</h3>
       <table class="links__table table">
           <tr class="table__row">
             <td class="table__col" v-for="(item,index) in items" :key="index">
