@@ -1,7 +1,7 @@
 <template>
   <section class="certificate">
     <div class="certificate__container">
-     <h3 class="certificate__title">{{title}} :</h3>
+     <h3 class="certificate__title"><i class="icon icon--certificate"></i>{{title}} :</h3>
       <table class="certificate__table table">
           <tr class="table__row">
             <th class="table__col" v-for="(item,index) in items" :key="index">{{item.title}}</th>

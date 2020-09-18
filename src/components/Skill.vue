@@ -1,7 +1,7 @@
 <template>
   <section class="skill">
     <div class="skill__container">
-      <h3 class="skill__title"><i class="icon icon--file-code"></i>{{title}} :</h3>
+      <h3 class="skill__title"><i class="icon icon--wrench-3"></i>{{title}} :</h3>
           <OS class="skill__table"/>
           <CSS class="skill__table"/>
           <CSSFramework class="skill__table"/>

@@ -49,6 +49,9 @@ $table-title-height     : var(--table-title-height);
             line-height: $table-title-height;
             color: text-color(rgb(10, 2, 2));
             border-radius: 4px 4px 0 0;
+            .icon{
+                padding-left: 10px;
+            }
         }
     }
 }
