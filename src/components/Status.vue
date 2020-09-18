@@ -5,8 +5,6 @@
       <table class="status__table table">
         <thead class="table__thead thead">
           <tr class="thead__row">
-          </tr>
-          <tr class="thead__row">
             <th class="thead__col" v-for="(item,index) in items" :key="index">{{item.title}}</th>
           </tr>
         </thead>

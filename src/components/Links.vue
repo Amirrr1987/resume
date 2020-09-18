@@ -3,11 +3,6 @@
     <div class="links__container">
      <h3 class="link__title">{{title}} :</h3>
       <table class="links__table table">
-        <thead class="table__thead thead">
-          <tr class="thead__row">
-          </tr>
-        </thead>
-        <tbody class="table__tbody tbody">
           <tr class="tbody__row">
             <td class="tbody__col" v-for="(item,index) in items" :key="index">
                 {{item.img}}
@@ -15,7 +10,6 @@
                 {{item.title}}
             </td>
           </tr>
-        </tbody>
       </table>
     </div>
   </section>
