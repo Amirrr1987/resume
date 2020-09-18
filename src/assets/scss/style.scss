@@ -12,16 +12,35 @@
     --table-tbody-height : 40px;
     --table-title-height : 60px;
     --body-font-family   : primary;
+    --dir                : rtl;
 }
-
+$dir                    : var(--dir);
 $body-text-color        : var(--body-text-color);
+$body-font-family       : var(--body-font-family);
 $body-bg-color          : var(--body-bg-color);
 $container-size         : var(--container-size);
+
 $table-bg-color         : var(--table-bg-color);
 $table-border-color     : var(--table-bg-color);
-$table-tbody-col-height : var(--table-tbody-height);
 $table-title-height     : var(--table-title-height);
-$body-font-family       : var(--body-font-family);
+
+
+@mixin class($class) {
+    .#{$class} {
+        &__container {
+            @extend .container;
+        }
+        &__table {}
+        &__title {
+            background-color: $table-bg-color;
+            padding-left: 1em;
+            padding-right: 1em;
+            height: $table-title-height;
+            line-height: $table-title-height;
+        }
+    }
+}
+
 .container{
     width: $container-size;
     margin-left: auto;
@@ -32,7 +51,7 @@ $body-font-family       : var(--body-font-family);
     padding: 0;
 }
 html{
-    direction: rtl;
+    direction: $dir;
 }
 #app{
   color            : $body-text-color;
@@ -52,7 +71,6 @@ html{
         border: 1px solid $table-border-color;
         padding-right: 1em;
         padding-left : 1em;
-        height: $table-tbody-col-height;
         text-align: center;
     }
 
@@ -60,19 +78,11 @@ html{
 }
 
 
-@mixin class($class) {
 
-    .#{$class} {
-        
-        &__container {
-            @extend .container;
-        }
-    
-        &__table {}
-    
-        &__title {
-            background-color: red;
-        }
-    }
+$components: basic, status, education, language, skill, project, course, certificate, links,description;
 
+@each $component in $components {
+  @include class($component);
 }
+
+
