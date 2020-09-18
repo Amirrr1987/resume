@@ -44,89 +44,10 @@ html{
     row-gap: 30px;
 }
 
-.basic {
-    &__container {
-        @extend .container;
-    }
 
-    &__table {}
-}
-
-.certificate {
-    &__container {
-        @extend .container;
-    }
-
-    &__table {}
-}
-
-.course {
-    &__container {
-        @extend .container;
-    }
-
-    &__table {}
-}
-.description {
-    &__container {
-        @extend .container;
-    }
-
-    &__table {}
-}
-.education {
-    &__container {
-        @extend .container;
-    }
-
-    &__table {}
-}
-.language{
-    &__container {
-        @extend .container;
-    }
-
-    &__table {
-
-    }
-}
-.links {
-    &__container {
-        @extend .container;
-    }
-
-    &__table {}
-}
-.project{
-    &__container {
-        @extend .container;
-    }
-
-    &__table {}
-}
-.status {
-    &__container {
-        @extend .container;
-    }
-
-    &__table {}
-}
-.skill {
-    &__container {
-        @extend .container;
-    }
-
-    &__table {}
-}
 .table {
     width: 100%;
     border-collapse: collapse;
-    &__tbody {}
-
-    &__thead {}
-}
-
-.tbody {
     &__col {
         border: 1px solid $table-border-color;
         padding-right: 1em;
@@ -138,20 +59,20 @@ html{
     &__row {}
 }
 
-.thead {
-    &__col {
-        border: 1px solid $table-border-color;
+
+@mixin class($class) {
+
+    .#{$class} {
+        
+        &__container {
+            @extend .container;
+        }
+    
+        &__table {}
+    
+        &__title {
+            background-color: red;
+        }
     }
 
-    &__row {}
-
-    &--title {
-        color: #FFF;
-        text-shadow: 0 0 #111;
-        text-align: right;
-        background-color: $table-bg-color;
-        padding-right: 1em;
-        padding-left : 1em;
-        height: $table-title-height;
-    }
 }
